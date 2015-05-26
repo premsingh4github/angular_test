@@ -5,11 +5,16 @@ ED.config(['$routeProvider',
         templateUrl: 'templates/add_order.html',
         controller: 'AddOrderController'
     }).
-      when('/ShowOrders', {
+     when('/ShowOrders', {
         templateUrl: 'templates/show_orders.html',
         controller: 'ShowOrdersController'
-      }).
-      otherwise({
-        redirectTo: '/AddNewOrder'
+     }).
+     when('/login',{
+      templateUrl:'templates/login.html',
+      controller:'loginController'
+     }).
+     otherwise({
+        redirectTo: '/login'
       });
 }]);
+

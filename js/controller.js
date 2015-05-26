@@ -1,4 +1,10 @@
-ED.controller('mainController', function($scope) {});
+ED.controller('loginController', function($scope) {
+    $scope.login = function(isValid){
+        if(isValid){
+          
+        }
+    }
+});
 ED.controller('AddOrderController', function($scope) {
      
     $scope.message = 'This is Add new order screen';

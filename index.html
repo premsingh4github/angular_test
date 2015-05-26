@@ -12,26 +12,19 @@
 </head>
 
 <!-- define angular controller -->
-<body ng-controller="mainController">
+<body >
  
 
  <div class="container">
-     <div class="row">
-     <div class="col-md-3">
-         <ul class="nav">
-             <li><a href="#AddNewOrder"> Add New Order </a></li>
-             <li><a href="#ShowOrders"> Show Order </a></li>
-         </ul>
-     </div>
-     <div class="col-md-9">
+     
+     
          <div ng-view=""></div>
-     </div>
-     </div>
+     
+    
  </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/angular.min.js"></script>
-  <script src="js/ui-bootstrap-tpls-0.13.0.min.js"></script>
   <script src="script.js"></script>
   <script src="js/route.js"></script>
   <script src="js/controller.js"></script>
