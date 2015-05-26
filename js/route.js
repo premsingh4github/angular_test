@@ -1,4 +1,4 @@
-sampleApp.config(['$routeProvider',
+ED.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/AddNewOrder', {
@@ -13,4 +13,3 @@ sampleApp.config(['$routeProvider',
         redirectTo: '/AddNewOrder'
       });
 }]);
- 
