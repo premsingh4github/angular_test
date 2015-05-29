@@ -33,6 +33,7 @@
                 });
 
             $httpProvider.interceptors.push(['$q', '$location', '$localStorage', function ($q, $location, $localStorage) {
+                debugger;
                 return {
                     'request': function (config) {
                         config.headers = config.headers || {};
@@ -50,6 +51,7 @@
                     }
                 };
             }]);
+            console.log($httpProvider);
         }
         ]).run(function($rootScope, $location, $localStorage) {
             $rootScope.$on( "$routeChangeStart", function(event, next) {

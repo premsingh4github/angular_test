@@ -7,8 +7,8 @@
         'angular-loading-bar'
     ])
         .constant('urls', {
-            BASE: 'http://jwt.dev:8000',
-            BASE_API: 'http://api.jwt.dev:8000/v1'
+            BASE: 'http://localhost/angular_test/jwt_example/public/',
+            BASE_API: 'http://localhost/angular_test/jwt_example/public/v1'
         })
         .config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
             $routeProvider.

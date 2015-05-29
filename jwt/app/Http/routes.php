@@ -9,7 +9,10 @@ use Illuminate\Http\Response as HttpResponse;
 Route::get('/', function () {
     return view('spa');
 });
+Route::post('/delete', function () {
 
+    return "deleted";
+});
 /**
  * Registers a new user and returns a auth token
  */
@@ -32,7 +35,6 @@ Route::post('/signup', function () {
  */
 Route::post('/signin', function () {
     $credentials = Input::only('email', 'password');
-
     if (!$token = JWTAuth::attempt($credentials)) {
         return Response::json(false, HttpResponse::HTTP_UNAUTHORIZED);
     }
