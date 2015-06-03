@@ -17,7 +17,9 @@
                             <p class="help-block" ng-show="userForm.password.$dirty && userForm.password.$invalid">The password is required</p>
                         </div>                       
                         <input class="btn  btn-success btn-block" type="submit" ng-click="login()" value="Login">
-                        <input class="btn btn-info btn-block" type="submit" value="Register">
+                        <input class="btn btn-info btn-block" ng-click='register()' type="submit" value="Register">
+                        <input class="btn btn-info btn-block" ng-click='request()' type="submit" value="request data">
+                        <input class="btn btn-info btn-block" ng-if="token" ng-click='logout()'  type="submit" value="Logout">
                     </fieldset>
                     </form>
                 </div>
